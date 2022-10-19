@@ -1,0 +1,1 @@
+Sitemap: https://deimie.github.io/t10-tri1-frontend/sitemap.xml
