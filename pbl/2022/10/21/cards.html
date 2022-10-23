@@ -184,6 +184,18 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 
 
@@ -222,8 +234,7 @@ body {
 </div>
 
 <div class="row">
-  <div class="column">
-  <div class="flip-card">
+  <div class="column"><div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="images/bird1.png" alt="Avatar" style="width:300px;height:300px;">
@@ -235,10 +246,8 @@ body {
       <p>Additional Notes</p>
     </div>
   </div>
-</div>
-  </div>
-  <div class="column">
-  <div class="flip-card">
+</div></div>
+  <div class="column"><div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="images/bird1.png" alt="Avatar" style="width:300px;height:300px;">
@@ -250,10 +259,8 @@ body {
       <p>Additional Notes</p>
     </div>
   </div>
-</div>
-</div>
-  <div class="column">
-  <div class="flip-card">
+</div></div>
+  <div class="column"><div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="images/bird1.png" alt="Avatar" style="width:300px;height:300px;">
@@ -265,8 +272,7 @@ body {
       <p>Additional Notes</p>
     </div>
   </div>
-</div>
-</div>
+</div></div>
 </div>
 
 
