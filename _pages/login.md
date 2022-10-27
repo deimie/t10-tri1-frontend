@@ -1,7 +1,6 @@
 ---
 title: Login
 permalink: /login/
-layout: notebook
 ---
 
 <html>
@@ -77,7 +76,7 @@ span.psw {
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="imgages/studentBirds.png">
   </div>
 
   <div class="container">
