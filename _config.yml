@@ -6,9 +6,9 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
-github_username: deimie
+title: Flockhub
+description: An easy to use classroom manager.
+github_username: 
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "t10-tri1-frontend"
 
@@ -39,8 +39,8 @@ baseurl: "/t10-tri1-frontend" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    twitter:
+    github: 
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -71,10 +71,10 @@ include:
 
 # This specifies what badges are turned on by default for notebook posts.
 default_badges:
-  github: true
-  binder: true
-  colab: true
-  deepnote: true
+  github: false
+  binder: false
+  colab: false
+  deepnote: false
 
 # Escape HTML in post descriptions
 html_escape:
