@@ -15,10 +15,10 @@
   
   
       ,"page0": {
-          "title": "Cards",
+          "title": "Student View",
           "content": ". Card Flip with Text . Hover over the image below: . Student . Period Number . Additional Notes . Student . Period Number . Additional Notes . Student . Period Number . Additional Notes . .",
-          "url": "https://deimie.github.io/t10-tri1-frontend/cards/",
-          "relUrl": "/cards/",
+          "url": "https://deimie.github.io/t10-tri1-frontend/studentview/",
+          "relUrl": "/studentview/",
           "date": ""
       }
       
