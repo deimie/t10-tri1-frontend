@@ -29,6 +29,17 @@
   
 
   
+      ,"page3": {
+          "title": "Login",
+          "content": ". Login Form . Username Password Login Remember me Cancel Forgot password? .",
+          "url": "https://deimie.github.io/t10-tri1-frontend/login/",
+          "relUrl": "/login/",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -46,7 +57,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimie.github.io/t10-tri1-frontend/robots.txt",
