@@ -51,6 +51,7 @@ img.avatar {
 
 .container {
   padding: 16px;
+  width: 1879px;
 }
 
 span.psw {
@@ -67,6 +68,7 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+
 }
 </style>
 </head>
@@ -76,7 +78,7 @@ span.psw {
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="imgages/studentBirds.png">
+    <img src="images/studentBirds.png">
   </div>
 
   <div class="container">
