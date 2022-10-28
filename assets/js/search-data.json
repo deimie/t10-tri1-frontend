@@ -42,7 +42,7 @@
   
       ,"page3": {
           "title": "Login",
-          "content": ". Login Form . Username Password Login Remember me Cancel Forgot password? .",
+          "content": ". Student Login/h2&gt; Username Password Login Remember me &lt;/body&gt; &lt;/html&gt; .",
           "url": "https://deimie.github.io/t10-tri1-frontend/login/",
           "relUrl": "/login/",
           "date": ""
