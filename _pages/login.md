@@ -1,6 +1,7 @@
 ---
-title: Login
+title: Student Login
 permalink: /login/
+layout: notebook
 ---
 <html>
 <head>
@@ -55,8 +56,6 @@ span.psw {
 </style>
 </head>
 <body>
-
-<h2>Student Login/h2>
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
