@@ -40,7 +40,9 @@
   
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "Student Login",
           "content": ". &lt;img src=&quot;images/studentBirds.png&quot;s&gt; Username Password Login Remember me .",
           "url": "https://deimie.github.io/t10-tri1-frontend/login/",
@@ -68,7 +70,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimie.github.io/t10-tri1-frontend/robots.txt",
