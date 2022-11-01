@@ -33,10 +33,6 @@ button {
 button:hover {
   opacity: 0.8;
 }
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
 img.avatar {
   width: 40%;
   border-radius: 50%;
@@ -60,9 +56,8 @@ span.psw {
 <body>
 
 <form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="images/studentBirds.png">
-  </div>
+
+  <img src="images/studentBirds.png">
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
