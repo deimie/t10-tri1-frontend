@@ -24,7 +24,7 @@ image: images/logo.png
   color: rgb(195, 203, 255);
 }
 
-.hero-text button {
+.hero-text input {
   border: none;
   outline: 0;
   padding: 10px 25px;
@@ -34,7 +34,7 @@ image: images/logo.png
   cursor: pointer;
 }
 
-.hero-text button:hover {
+.hero-text input:hover {
   background-color: #555;
   color: white;
 }
@@ -46,7 +46,9 @@ image: images/logo.png
   <div class="hero-text">
     <h1 style="font-size:50px">Welcome to Flockhub</h1>
     <p>The easy to use classroom manager</p>
-    <button><a href="https://deimie.github.io/t10-tri1-frontend/login/">Login</a></button>
+    <form action="https://deimie.github.io/t10-tri1-frontend/login/">
+      <input type="submit" value="Login" class="hero-text">
+    </form>
   </div>
 </div>
 
