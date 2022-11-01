@@ -7,9 +7,6 @@ layout: notebook
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif; 
-  }
 form{
   background-color: #b0ed8a;
 }  
@@ -17,7 +14,6 @@ input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -27,14 +23,12 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
   width: 100%;
 }
 button:hover {
   opacity: 0.8;
 }
 img.avatar {
-  width: 40%;
   border-radius: 50%;
 }
 .container {
@@ -57,7 +51,7 @@ span.psw {
 
 <form action="/action_page.php" method="post">
 
-  <img src="images/studentBirds.png">
+  <img src="https://media.istockphoto.com/vectors/colorful-birds-sitting-on-beautiful-trees-isolated-on-white-vector-id1290215420?k=20&m=1290215420&s=612x612&w=0&h=8clhSXAVOIorv-5Q0C5QNIBlAQDC8Vtn54uHj3TuaQc=">
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
