@@ -9,8 +9,10 @@ layout: notebook
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif; 
-  background-color: #b0ed8a;
   }
+form{
+  background-color: #b0ed8a;
+}  
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -59,7 +61,7 @@ span.psw {
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="images/studentBirds.png" alt="Avatar" class="avatar" >
+    <img src="images/studentBirds.png"s>
   </div>
 
   <div class="container">
