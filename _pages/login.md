@@ -9,13 +9,15 @@ layout: notebook
 <style>
 form{
   background-color: #fff;
+  border: 4px solid #b0ed8a
 }  
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid #b0ed8a;
+  border: 1px solid #ccc;
   box-sizing: border-box;
+  b
 }
 button {
   background-color: #03989E;
