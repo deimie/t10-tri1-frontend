@@ -61,7 +61,7 @@ span.psw {
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="images/studentBirds.png"s>
+    <img src="images/studentBirds.png">
   </div>
 
   <div class="container">
