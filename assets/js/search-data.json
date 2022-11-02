@@ -42,28 +42,28 @@
   
 
   
-      ,"page4": {
-          "title": "Student Login",
-          "content": ". Username Password Login Remember me .",
-          "url": "https://deimie.github.io/t10-tri1-frontend/login/",
-          "relUrl": "/login/",
+  
+
+  
+
+  
+  
+
+  
+      ,"page7": {
+          "title": "Student Signup",
+          "content": ". Username Password Confirm Password Signup .",
+          "url": "https://deimie.github.io/t10-tri1-frontend/signup/",
+          "relUrl": "/signup/",
           "date": ""
       }
       
   
 
   
-  
-
-  
-
-  
-  
-
-  
       ,"page8": {
-          "title": "Student Signup",
-          "content": ". Username Password Confirm Password Signup .",
+          "title": "Student Login",
+          "content": ". Username Password Login Remember me .",
           "url": "https://deimie.github.io/t10-tri1-frontend/login/",
           "relUrl": "/login/",
           "date": ""
