@@ -19,7 +19,7 @@ layout: default
   <!-- Hide posts if front matter flag hide:true -->
   {% assign posts = ''|split:'' %}
   {% for post in rawposts %}
-    {% if post.hide != false %}
+    {% if post.hide != true %}
       {% assign posts = posts|push:post%}
     {% endif %}
   {% endfor %}
