@@ -1,6 +1,6 @@
 ---
 title: Student Signup
-permalink: /login/
+permalink: /signup/
 layout: notebook
 ---
 <html>
