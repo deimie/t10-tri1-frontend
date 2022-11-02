@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Student Login | Flockhub</title>
+<title>Student Signup | Flockhub</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Student Login" />
+<meta property="og:title" content="Student Signup" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use classroom manager." />
 <meta property="og:description" content="An easy to use classroom manager." />
@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="Flockhub" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Student Login" />
+<meta property="twitter:title" content="Student Signup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use classroom manager.","headline":"Student Login","url":"https://deimie.github.io/t10-tri1-frontend/login/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use classroom manager.","headline":"Student Signup","url":"https://deimie.github.io/t10-tri1-frontend/login/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/t10-tri1-frontend/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://deimie.github.io/t10-tri1-frontend/feed.xml" title="Flockhub" /><link rel="shortcut icon" type="image/x-icon" href="/t10-tri1-frontend/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -64,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/t10-tri1-frontend/studentview/">Student View</a><a class="page-link" href="/t10-tri1-frontend/blogs/">Posts</a><a class="page-link" href="/t10-tri1-frontend/login/">Student Login</a><a class="page-link" href="/t10-tri1-frontend/search/">Search</a></div>
+        <div class="trigger"><a class="page-link" href="/t10-tri1-frontend/studentview/">Student View</a><a class="page-link" href="/t10-tri1-frontend/blogs/">Posts</a><a class="page-link" href="/t10-tri1-frontend/login/">Student Login</a><a class="page-link" href="/t10-tri1-frontend/search/">Search</a><a class="page-link" href="/t10-tri1-frontend/login/">Student Signup</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -72,7 +72,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Student Login</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Student Signup</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="" itemprop="datePublished">
         
       </time>
     </p>
@@ -137,21 +137,16 @@ span.psw {
 </style>
 </head>
 <body>
-
 <form action="/action_page.php" method="post">
-
   <img src="https://media.istockphoto.com/vectors/colorful-birds-sitting-on-beautiful-trees-isolated-on-white-vector-id1290215420?k=20&amp;m=1290215420&amp;s=612x612&amp;w=0&amp;h=8clhSXAVOIorv-5Q0C5QNIBlAQDC8Vtn54uHj3TuaQc=" />
-
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required="" />
+    <input type="text" placeholder="Enter Github" name="uname" required="" />
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required="" />
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember" /> Remember me
-    </label>
-
+      <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required="" />
+    <button type="submit">Signup</button>
   </div>
 </form>
 

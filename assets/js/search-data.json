@@ -61,6 +61,14 @@
   
 
   
+      ,"page8": {
+          "title": "Student Signup",
+          "content": ". Username Password Confirm Password Signup .",
+          "url": "https://deimie.github.io/t10-tri1-frontend/login/",
+          "relUrl": "/login/",
+          "date": ""
+      }
+      
   
 
   
@@ -70,7 +78,10 @@
   
 
   
-      ,"page11": {
+  
+
+  
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimie.github.io/t10-tri1-frontend/robots.txt",
