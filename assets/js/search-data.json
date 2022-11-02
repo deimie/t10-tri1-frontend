@@ -63,7 +63,7 @@
   
       ,"page8": {
           "title": "Student Login",
-          "content": ". Username Password Login Remember me .",
+          "content": ". Username Password Login Remember me Don&#39;t have an account? . Sign up .",
           "url": "https://deimie.github.io/t10-tri1-frontend/login/",
           "relUrl": "/login/",
           "date": ""
