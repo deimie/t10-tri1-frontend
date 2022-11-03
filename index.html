@@ -124,10 +124,10 @@ body{
 <body>
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">Welcome to Flockhub</h1>
+    <h1 style="font-size:50px" id="welcome">Welcome to Flockhub</h1>
     <p style="color:white">The easy to use classroom manager</p>
     <form action="https://deimie.github.io/t10-tri1-frontend/login/">
-      <input type="submit" value="Login" class="hero-text">
+      <input type="submit" value="Login" class="hero-text" id="login">
     </form>
   </div>
 </div>
@@ -135,8 +135,13 @@ body{
 </html>
 
 <script>
-  if (localStorage.getItem("loggedIn") == true) {
-    alert('logged in');
+  if (localStorage.getItem("loggedIn") == "true") {
+    document.getElementById("welcome").innerHTML = "Welcome to Flockhub, " + localStorage.getItem("ghUsername");
+    document.getElementById("login").style.display = none;
+  } 
+  else {
+    document.getElementById("welcome").innerHTML = "Welcome to Flockhub";
+    document.getElementById("login").style.display = block;
   }
 </script>
   </div><a class="u-url" href="/t10-tri1-frontend/" hidden></a>
