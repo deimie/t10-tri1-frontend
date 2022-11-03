@@ -56,12 +56,28 @@ span.psw {
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Github" name="uname" required>
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input id="psw1" type="password" placeholder="Enter Password" name="psw" required>
       <label for="psw"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <button type="submit">Signup</button>
+    <input id="psw2" type="password" placeholder="Enter Password" name="psw" required>
+    <p id="error" style="color:red;"></p>
+    <button onclick="pswSubmit()">Sign Up</button>
   </div>
 </form>
 
 </body>
 </html>
+
+<script>
+
+  function pswSubmit(){
+    if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
+      window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
+    }
+    else {
+      document.getElementById("error").innerHTML = "Passwords do not match.";
+    }
+  }
+
+
+
+</script> 
