@@ -59,7 +59,8 @@ span.psw {
     <input id="psw1" type="password" placeholder="Enter Password" name="psw" required>
       <label for="psw"><b>Confirm Password</b></label>
     <input id="psw2" type="password" placeholder="Enter Password" name="psw" required>
-    <button onclick= type="submit">Sign Up</button>
+    <p id="error" style="color:red;"></p>
+    <button onclick="pswSubmit()">Sign Up</button>
   </div>
 </form>
 
@@ -67,14 +68,17 @@ span.psw {
 </html>
 
 <script>
+  localStorage.clear();
+  localStorage.setItem("loggedIn", false);
+
   function pswSubmit(){
-    canSubmit=false
-    if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
-      canSubmit = true
+    if (document.getElementById("psw1").value == document.getElementById("psw2").value){
+      
+      localStorage.setItem("loggedIn", true);
+      window.location.replace("https://deimie.github.io/t10-tri1-frontend/"); // redirect to home page
     }
     else {
-      canSubmit = false
-      
+      document.getElementById("error").innerHTML = "Passwords do not match.";
     }
   }
 
