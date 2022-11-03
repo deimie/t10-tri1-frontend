@@ -148,8 +148,8 @@ window.onload = wrap_img;
               haha_but.innerHTML = row.haha;  // add fetched "haha count" to innerHTML
               haha_but.onclick = function () {
                 // onclick function call with "like parameters"
-                reaction(NEWENTRY, new_joke_url+'/'+newJoke+'/'+newJoke, 0);  
-                //reaction(HAHA, like_url+row.id, haha_but.id);  
+                 
+                reaction(HAHA, like_url+row.id, haha_but.id);  
               };
               haha.appendChild(haha_but);  // add "haha button" to haha cell
 
@@ -181,9 +181,9 @@ window.onload = wrap_img;
 
   //var newJoke = document.getElementById("newJoke");
   // Add a new entry function
-  //function AddNewEntryReaction() {
-    
-  //}
+  function AddNewEntryReaction() {
+      reaction(NEWENTRY, new_joke_url+'/'+newJoke+'/'+newJoke, 0);
+  }
 
   // Reaction function to likes or jeers user actions
   function reaction(type, put_url, elemID) {
@@ -205,8 +205,8 @@ window.onload = wrap_img;
             document.getElementById(elemID).innerHTML = data.haha;  // fetched haha data assigned to haha Document Object Model (DOM)
           else if (type === BOOHOO) // jeer data element
             document.getElementById(elemID).innerHTML = data.boohoo; 
-          else if (type === BOOHOO) // jeer data element
-            document.getElementById(elemID).innerHTML = data.boohoo;    // fetched boohoo data assigned to boohoo Document Object Model (DOM)          
+          //else if (type === NEWENTRY) // jeer data element
+            //document.getElementById(elemID).innerHTML = data.boohoo;    // fetched boohoo data assigned to boohoo Document Object Model (DOM)          
           else
             error("unknown type: " + type);  // should never occur
       })

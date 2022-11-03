@@ -88,8 +88,11 @@ window.onload = wrap_img;
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body{
+  background-color:#85d6a7;
+}  
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/homebirds.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/homebirds.jpeg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +103,7 @@ window.onload = wrap_img;
   text-align: center;
   top: 50%;
   left: 50%;
-  color: rgb(195, 203, 255);
+  color: rgb(146, 156, 222);
   padding: 20px
 }
 .hero-text input {
@@ -131,7 +134,11 @@ window.onload = wrap_img;
 </body>
 </html>
 
-
+<script>
+  if (localStorage.getItem("loggedIn") = true) {
+    alert('logged in');
+  }
+</script>
   </div><a class="u-url" href="/t10-tri1-frontend/" hidden></a>
 </article>
 
