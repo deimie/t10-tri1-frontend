@@ -54,19 +54,19 @@ span.psw {
 </head>
 <body>
 
-<form>
-  <img src="https://media.istockphoto.com/vectors/colorful-birds-sitting-on-beautiful-trees-isolated-on-white-vector-id1290215420?k=20&m=1290215420&s=612x612&w=0&h=8clhSXAVOIorv-5Q0C5QNIBlAQDC8Vtn54uHj3TuaQc=">
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Github" name="uname">
-    <label for="psw"><b>Password</b></label>
+<img src="https://media.istockphoto.com/vectors/colorful-birds-sitting-on-beautiful-trees-isolated-on-white-vector-id1290215420?k=20&m=1290215420&s=612x612&w=0&h=8clhSXAVOIorv-5Q0C5QNIBlAQDC8Vtn54uHj3TuaQc=">
+
+<div class="container">
+  <label for="uname"><b>Username</b></label>
+    <input id="uname" type="text" placeholder="Enter Github" name="uname">
+  <label for="psw"><b>Password</b></label>
     <input id="psw1" type="password" placeholder="Enter Password" name="psw">
-      <label for="psw"><b>Confirm Password</b></label>
+  <label for="psw"><b>Confirm Password</b></label>
     <input id="psw2" type="password" placeholder="Re-Enter Password" name="psw">
-    <p id="error" style="color:red;"></p>
-    <button onclick="pswSubmit()">Sign Up</button>
-  </div>
-</form>
+
+  <p id="error" style="color: red;"></p>
+  <button onclick="pswSubmit()">Sign Up</button>
+</div>
 
 </body>
 </html>
@@ -76,15 +76,22 @@ span.psw {
   localStorage.setItem("loggedIn", false);
 
   function pswSubmit(){
-    if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
-      localStorage.setItem("loggedIn", true);
-      localStorage.setItem("ghUsername", document.getElementByName("uname").value)
-
-      window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
+    if (document.getElementById("psw1").value = '' || document.getElementById("psw2").value = '' || document.getElementById("uname").value = '') {
+        document.getElementById("error").innerHTML = "One or more fields left emtpy.";
     }
     else {
+      if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
+      localStorage.setItem("loggedIn", true);
+      localStorage.setItem("ghUsername", document.getElementById("uname").value)
+
+      window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
+      }
+     else {
       document.getElementById("error").innerHTML = "Passwords do not match.";
+     }
     }
+
+    
   }
 
 </script> 
