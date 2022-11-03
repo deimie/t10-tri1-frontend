@@ -93,6 +93,31 @@ window.onload = wrap_img;
     <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script>
+  localStorage.clear();
+  localStorage.setItem("loggedIn", false);
+
+  function pswSubmit(){
+    if (document.getElementById("psw1").value = '' || document.getElementById("psw2").value = '' || document.getElementById("uname").value = '') {
+        document.getElementById("error").innerHTML = "One or more fields left emtpy.";
+    }
+    else {
+      if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
+      localStorage.setItem("loggedIn", true);
+      localStorage.setItem("ghUsername", document.getElementById("uname").value)
+
+      window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
+      }
+     else {
+      document.getElementById("error").innerHTML = "Passwords do not match.";
+     }
+    }
+
+    
+  }
+</script>
+
 <style>
 body{
   background-color:#85d6a7;
@@ -158,31 +183,6 @@ span.psw {
 
 </body>
 </html>
-
-<script>
-  localStorage.clear();
-  localStorage.setItem("loggedIn", false);
-
-  function pswSubmit(){
-    if (document.getElementById("psw1").value = '' || document.getElementById("psw2").value = '' || document.getElementById("uname").value = '') {
-        document.getElementById("error").innerHTML = "One or more fields left emtpy.";
-    }
-    else {
-      if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
-      localStorage.setItem("loggedIn", true);
-      localStorage.setItem("ghUsername", document.getElementById("uname").value)
-
-      window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
-      }
-     else {
-      document.getElementById("error").innerHTML = "Passwords do not match.";
-     }
-    }
-
-    
-  }
-
-</script>
 
 
 
