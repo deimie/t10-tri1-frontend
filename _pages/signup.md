@@ -12,7 +12,7 @@ layout: notebook
   localStorage.setItem("loggedIn", false);
 
   function pswSubmit(){
-    if (document.getElementById("psw1").value = '' || document.getElementById("psw2").value = '' || document.getElementById("uname").value = '') {
+    if (document.getElementById("psw1").value = ''; || document.getElementById("psw2").value = ''; || document.getElementById("uname").value = '';) {
         document.getElementById("error").innerHTML = "One or more fields left emtpy.";
     }
     else {
