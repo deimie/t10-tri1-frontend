@@ -56,17 +56,19 @@ span.psw {
 
 <img src="https://media.istockphoto.com/vectors/colorful-birds-sitting-on-beautiful-trees-isolated-on-white-vector-id1290215420?k=20&m=1290215420&s=612x612&w=0&h=8clhSXAVOIorv-5Q0C5QNIBlAQDC8Vtn54uHj3TuaQc=">
 
-<div class="container">
-  <label for="uname"><b>Username</b></label>
-    <input id="uname" type="text" placeholder="Enter Github" name="uname">
-  <label for="psw"><b>Password</b></label>
-    <input id="psw1" type="password" placeholder="Enter Password" name="psw">
-  <label for="psw"><b>Confirm Password</b></label>
-    <input id="psw2" type="password" placeholder="Re-Enter Password" name="psw">
+<form>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Github" name="uname">
+    <label for="psw"><b>Password</b></label>
+      <input id="psw1" type="password" placeholder="Enter Password" name="psw">
+    <label for="psw"><b>Confirm Password</b></label>
+      <input id="psw2" type="password" placeholder="Re-Enter Password" name="psw">
 
-  <p id="error" style="color: red;"></p>
-  <button onclick="pswSubmit()">Sign Up</button>
-</div>
+    <p id="error" style="color: red;"></p>
+    <button onclick="pswSubmit()">Sign Up</button>
+  </div>
+</form>
 
 </body>
 </html>
