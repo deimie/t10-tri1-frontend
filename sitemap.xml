@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://deimie.github.io/t10-tri1-frontend/pbl/2022/10/21/cards.html</loc>
-<lastmod>2022-10-21T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://deimie.github.io/t10-tri1-frontend/data/jokes</loc>
 <lastmod>2022-10-22T00:00:00-05:00</lastmod>
 </url>
