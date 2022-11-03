@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Login data",
-            "content": "Students . Name ID Age .",
+            "content": "Students . Name password .",
             "url": "https://deimie.github.io/t10-tri1-frontend/data/database",
             "relUrl": "/data/database",
             "date": " • Nov 2, 2022"

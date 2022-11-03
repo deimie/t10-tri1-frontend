@@ -78,8 +78,8 @@ window.onload = wrap_img;
   <thead>
   <tr>
     <th>Name</th>
-    <th>ID</th>
-    <th>Age</th>
+    <th>password</th>
+    <th></th>
   </tr>
   </thead>
   <tbody id="result">
@@ -93,7 +93,7 @@ window.onload = wrap_img;
   const resultContainer = document.getElementById("result");
 
   // prepare fetch options
-  const url = "https://csa.nighthawkcodingsociety.com/api/person/all";
+  const url = "https://flockhub.nighthawkcoding.ml/api/jokes/";
   const options = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
@@ -126,17 +126,17 @@ window.onload = wrap_img;
           for (const row of data) {
             // tr and td build out for each row
             const tr = document.createElement("tr");
-            const name = document.createElement("td");
-            const id = document.createElement("td");
-            const age = document.createElement("td");
+            const boohoo = document.createElement("td");
+            const haha = document.createElement("td");
+      
             // data is specific to the API
-            name.innerHTML = row.name; 
-            id.innerHTML = row.email; 
-            age.innerHTML = row.age; 
+            boohoo.innerHTML = row.boohoo; 
+            haha.innerHTML = row.haha; 
+
             // this build td's into tr
-            tr.appendChild(name);
-            tr.appendChild(id);
-            tr.appendChild(age);
+            tr.appendChild(boohoo);
+            tr.appendChild(haha);
+
             // add HTML to container
             resultContainer.appendChild(tr);
           }
