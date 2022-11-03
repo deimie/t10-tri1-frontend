@@ -87,6 +87,18 @@ window.onload = wrap_img;
     <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+  if (localStorage.getItem("loggedIn") == "true") {
+    document.getElementById("welcome").innerHTML = "Welcome to Flockhub, " + localStorage.getItem("ghUsername");
+    document.getElementById("login").style.display = none;
+  } 
+  else {
+    document.getElementById("welcome").innerHTML = "Welcome to Flockhub";
+    document.getElementById("login").style.display = '';
+  }
+</script>
+
 <style>
 body{
   background-color:#85d6a7;
@@ -134,16 +146,7 @@ body{
 </body>
 </html>
 
-<script>
-  if (localStorage.getItem("loggedIn") == "true") {
-    document.getElementById("welcome").innerHTML = "Welcome to Flockhub, " + localStorage.getItem("ghUsername");
-    document.getElementById("login").style.display = none;
-  } 
-  else {
-    document.getElementById("welcome").innerHTML = "Welcome to Flockhub";
-    document.getElementById("login").style.display = '';
-  }
-</script>
+
   </div><a class="u-url" href="/t10-tri1-frontend/" hidden></a>
 </article>
 
