@@ -87,7 +87,8 @@ window.onload = wrap_img;
 </table>
 
 <p><input type="text" id="newJoke" placeholder="Enter New Joke" />
-<button id="btn" onclick="AddNewEntryReaction()">Save</button></p>
+<!-- <button id="btn" onclick="AddNewEntryReaction()">Save</button> -->
+<button id="btn" onclick="try()">Save</button></p>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -183,6 +184,10 @@ window.onload = wrap_img;
   // Add a new entry function
   function AddNewEntryReaction() {
       reaction(NEWENTRY, new_joke_url+'/'+newJoke+'/'+newJoke, 0);
+  }
+
+  function try() {
+    reaction(BOOHOO, jeer_url+1, 1);
   }
 
   // Reaction function to likes or jeers user actions
