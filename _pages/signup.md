@@ -7,6 +7,9 @@ layout: notebook
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body{
+  background-color:#85d6a7;
+}    
 form{
   background-color: #fff;
   border: 4px solid #b0ed8a
