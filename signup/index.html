@@ -158,28 +158,18 @@ span.psw {
 </html>
 
 <script>
-<<<<<<< HEAD
   localStorage.clear();
   localStorage.setItem("loggedIn", false);
 
   function pswSubmit(){
-    if (document.getElementById("psw1").value == document.getElementById("psw2").value){
-      
-      localStorage.setItem("loggedIn", true);
-      window.location.replace("https://deimie.github.io/t10-tri1-frontend/"); // redirect to home page
-=======
-
-  function pswSubmit(){
     if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
+      localStorage.setItem("loggedIn", true);
       window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
->>>>>>> 58a9e7d36895b028826baacf29c79d70685a899e
     }
     else {
       document.getElementById("error").innerHTML = "Passwords do not match.";
     }
   }
-
-
 
 </script>
 
