@@ -60,10 +60,8 @@ span.psw {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
     <button type="submit" onclick= "alert('test')">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-    <p>Don't have an account?</p><a href="https://deimie.github.io/t10-tri1-frontend/signup/">Sign up</a>
+    <p>Don't have an account?</p>
+    <a href="https://deimie.github.io/t10-tri1-frontend/signup/"><p>Sign up</p></a>
   </div>
 </form>
 
