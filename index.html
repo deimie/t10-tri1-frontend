@@ -7,8 +7,11 @@ image: images/logo.png
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body{
+  background-color:#85d6a7;
+}  
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/homebirds.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/homebirds.jpeg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +22,8 @@ image: images/logo.png
   text-align: center;
   top: 50%;
   left: 50%;
-  color: rgb(195, 203, 255);
+  color: rgb(146, 156, 222);
+  padding: 20px
 }
 .hero-text input {
   border: none;
@@ -40,7 +44,7 @@ image: images/logo.png
 <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px">Welcome to Flockhub</h1>
-    <p>The easy to use classroom manager</p>
+    <p style="color:white">The easy to use classroom manager</p>
     <form action="https://deimie.github.io/t10-tri1-frontend/login/">
       <input type="submit" value="Login" class="hero-text">
     </form>
