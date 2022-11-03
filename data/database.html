@@ -4,12 +4,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Logins | Flockhub</title>
+<title>Login data | Flockhub</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Logins" />
+<meta property="og:title" content="Login data" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="list of logins" />
-<meta property="og:description" content="list of logins" />
+<meta name="description" content="logins" />
+<meta property="og:description" content="logins" />
 <link rel="canonical" href="https://deimie.github.io/t10-tri1-frontend/data/database" />
 <meta property="og:url" content="https://deimie.github.io/t10-tri1-frontend/data/database" />
 <meta property="og:site_name" content="Flockhub" />
@@ -18,9 +18,9 @@
 <meta property="article:published_time" content="2022-11-02T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://deimie.github.io/t10-tri1-frontend/images/database.png" />
-<meta property="twitter:title" content="Logins" />
+<meta property="twitter:title" content="Login data" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-02T00:00:00-05:00","datePublished":"2022-11-02T00:00:00-05:00","description":"list of logins","headline":"Logins","image":"https://deimie.github.io/t10-tri1-frontend/images/database.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://deimie.github.io/t10-tri1-frontend/data/database"},"url":"https://deimie.github.io/t10-tri1-frontend/data/database"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-02T00:00:00-05:00","datePublished":"2022-11-02T00:00:00-05:00","description":"logins","headline":"Login data","image":"https://deimie.github.io/t10-tri1-frontend/images/database.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://deimie.github.io/t10-tri1-frontend/data/database"},"url":"https://deimie.github.io/t10-tri1-frontend/data/database"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/t10-tri1-frontend/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://deimie.github.io/t10-tri1-frontend/feed.xml" title="Flockhub" /><link rel="shortcut icon" type="image/x-icon" href="/t10-tri1-frontend/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -77,8 +77,9 @@ window.onload = wrap_img;
 <table>
   <thead>
   <tr>
-    <th>Username</th>
-    <th>Password</th>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Age</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -92,11 +93,11 @@ window.onload = wrap_img;
   const resultContainer = document.getElementById("result");
 
   // prepare fetch options
-  const url = "https://flockhub.nighthawkcoding.ml/api/jokes";
+  const url = "https://csa.nighthawkcodingsociety.com/api/person/all";
   const options = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // nocors, *cors, same-origin
-    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cache
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'omit', // include, *same-origin, omit
     headers: {
       'Content-Type': 'application/json'
@@ -125,16 +126,17 @@ window.onload = wrap_img;
           for (const row of data) {
             // tr and td build out for each row
             const tr = document.createElement("tr");
-            const haha = document.createElement("td");
-            const boohoo = document.createElement("td");
-
+            const name = document.createElement("td");
+            const id = document.createElement("td");
+            const age = document.createElement("td");
             // data is specific to the API
-            haha.innerHTML = row.haha; 
-            boohoo.innerHTML = row.boohoo; 
-
+            name.innerHTML = row.name; 
+            id.innerHTML = row.email; 
+            age.innerHTML = row.age; 
             // this build td's into tr
-            tr.appendChild(haha);
-            tr.appendChild(boohoo);
+            tr.appendChild(name);
+            tr.appendChild(id);
+            tr.appendChild(age);
             // add HTML to container
             resultContainer.appendChild(tr);
           }
