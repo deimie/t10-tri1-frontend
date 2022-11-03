@@ -53,15 +53,16 @@ span.psw {
 </style>
 </head>
 <body>
-<form action="/action_page.php" method="post">
+
+<form>
   <img src="https://media.istockphoto.com/vectors/colorful-birds-sitting-on-beautiful-trees-isolated-on-white-vector-id1290215420?k=20&m=1290215420&s=612x612&w=0&h=8clhSXAVOIorv-5Q0C5QNIBlAQDC8Vtn54uHj3TuaQc=">
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Github" name="uname" required>
+    <input type="text" placeholder="Enter Github" name="uname">
     <label for="psw"><b>Password</b></label>
-    <input id="psw1" type="password" placeholder="Enter Password" name="psw" required>
+    <input id="psw1" type="password" placeholder="Enter Password" name="psw">
       <label for="psw"><b>Confirm Password</b></label>
-    <input id="psw2" type="password" placeholder="Enter Password" name="psw" required>
+    <input id="psw2" type="password" placeholder="Re-Enter Password" name="psw">
     <p id="error" style="color:red;"></p>
     <button onclick="pswSubmit()">Sign Up</button>
   </div>
@@ -77,6 +78,8 @@ span.psw {
   function pswSubmit(){
     if (document.getElementById("psw1").value == document.getElementById  ("psw2").value){
       localStorage.setItem("loggedIn", true);
+      localStorage.setItem("ghUsername", document.getElementByName("uname").value)
+
       window.location.replace("https://deimie.github.io/t10-tri1-frontend/");
     }
     else {
