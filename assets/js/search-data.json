@@ -52,7 +52,7 @@
   
       ,"page7": {
           "title": "Student Signup",
-          "content": ". Username Password Confirm Password Signup .",
+          "content": ". Username Password Confirm Password &lt;button onclick= type=&quot;submit&quot;&gt;Sign Up&lt;/button&gt; .",
           "url": "https://deimie.github.io/t10-tri1-frontend/signup/",
           "relUrl": "/signup/",
           "date": ""
