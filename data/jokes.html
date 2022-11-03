@@ -87,8 +87,8 @@ window.onload = wrap_img;
 </table>
 
 <p><input type="text" id="newJoke" placeholder="Enter New Joke" />
-<button id="btn" onclick="AddNewEntryReaction()">Save</button>
-<button id="btn1" onclick="Try()">Save</button></p>
+<input type="text" id="newJoke1" placeholder="Enter sec Joke" />
+<button id="btn" onclick="AddNewEntryReaction()">Save</button></p>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -184,10 +184,11 @@ window.onload = wrap_img;
  
   // Add a new entry function
   function AddNewEntryReaction() {
-      //var newJoke = document.getElementById("newJoke");
-      var newJoke = "try msg";
+      var newJoke = document.getElementById("newJoke");
+      var newJoke1 = document.getElementById("newJoke1");
+    
      
-      reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke, 0);
+      reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1, 0);
   }
 
   function Try() {
