@@ -73,10 +73,10 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <!-- HTML table fragment for page -->
-<table>
+<table style="text-align: center; width = 50%">
   <thead>
   <tr>
-    <th>Sign Up</th>
+    <th>Username</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -133,10 +133,46 @@ window.onload = wrap_img;
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
-          
+          for (const row of data) {
+            // make "tr element" for each "row of data"
+            const tr = document.createElement("tr");
+            
+            // td for joke cell
+            const joke = document.createElement("td");
+              joke.innerHTML = row.joke;  // add fetched data to innerHTML
 
+            // td for haha cell with onclick actions
+            const haha = document.createElement("td");
+              const haha_but = document.createElement('button');
+              haha_but.id = HAHA+row.id   // establishes a HAHA JS id for cell
+              haha_but.innerHTML = row.haha;  // add fetched "haha count" to innerHTML
+              haha_but.onclick = function () {
+                // onclick function call with "like parameters"
+                reaction(HAHA, like_url+row.id, haha_but.id);  
+              };
+              haha.appendChild(haha_but);  // add "haha button" to haha cell
+
+            // td for boohoo cell with onclick actions
+            const boohoo = document.createElement("td");
+              const boohoo_but = document.createElement('button');
+              boohoo_but.id = BOOHOO+row.id  // establishes a BOOHOO JS id for cell
+              boohoo_but.innerHTML = row.boohoo;  // add fetched "boohoo count" to innerHTML
+              boohoo_but.onclick = function () {
+                // onclick function call with "jeer parameters"
+                reaction(BOOHOO, jeer_url+row.id, boohoo_but.id);  
+              };
+              boohoo.appendChild(boohoo_but);  // add "boohoo button" to boohoo cell
+             
+            // this builds ALL td's (cells) into tr (row) element
+            tr.appendChild(joke);
+
+
+            // this adds all the tr (row) work above to the HTML "result" container
+            resultContainer.appendChild(tr);
+          }
       })
-  })
+  }) 
+
   // catch fetch errors (ie Nginx ACCESS to server blocked)
   .catch(err => {
     error(err + " " + get_url);
@@ -150,6 +186,7 @@ window.onload = wrap_img;
     
      
       reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1, 0);
+      location.reload();
   }
 
   function Try() {
