@@ -75,7 +75,7 @@ window.onload = wrap_img;
         <style>
   t1 {
     text-align: center;
-    width = 50%;
+    width = 50%
 
   }
 </style>
@@ -148,8 +148,6 @@ window.onload = wrap_img;
             // td for joke cell
             const joke = document.createElement("td");
               joke.innerHTML = row.joke;  // add fetched data to innerHTML
-            const joke = document.createElement("td");
-              joke.innerHTML = row.joke;  // add fetched data to innerHTML  
 
             // td for haha cell with onclick actions
             const haha = document.createElement("td");
@@ -193,10 +191,9 @@ window.onload = wrap_img;
   function AddNewEntryReaction() {
       var newJoke = document.getElementById("newJoke").value;
       var newJoke1 = document.getElementById("newJoke1").value;
-
     
      
-      reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1+"/", 0);
+      reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1, 0);
       location.reload();
   }
 
