@@ -119,7 +119,7 @@ span.psw {
 </style>
 
 <!-- HTML table fragment for page -->
-<table style=" ">
+<table>
   <thead>
   <tr>
     <th>Username</th>
@@ -132,17 +132,17 @@ span.psw {
 
 <p><input type="text" id="newJoke" placeholder="Username" />
 <input type="text" id="newJoke1" placeholder="Password" />
-<button id="btn" onclick="AddNewEntryReaction()">Save</button></p>
-<div class="container">
+<button id="btn" onclick="AddNewEntryReaction()">Save</button>
+&lt;!– &lt;div class="container"&gt;
   <label for="newJoke"><b>Username</b></label>
     <input id="newJoke" type="text" placeholder="Enter Github" name="newJoke" />
   <label for="psw"><b>Password</b></label>
     <input id="newJoke1" type="password" placeholder="Enter Password" name="psw" />
   <label for="psw"><b>Confirm Password</b></label>
-    <input id="psw2" type="password" placeholder="Re-Enter Password" name="psw" />
-  <p id="error" style="color: red;"></p>
-  <button onclick="AddNewEntryReaction()">Sign Up</button>
-</div>
+    <input id="psw2" type="password" placeholder="Re-Enter Password" name="psw" /></p>
+<p id="error" style="color: red;"></p>
+<p><button onclick="AddNewEntryReaction()">Sign Up</button>
+&lt;/div&gt; –&gt;</p>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -224,6 +224,7 @@ span.psw {
              
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(joke);
+            tr.appendChild(img);
 
 
             // this adds all the tr (row) work above to the HTML "result" container
@@ -242,13 +243,13 @@ span.psw {
   function AddNewEntryReaction() {
     var newJoke = document.getElementById("newJoke").value;
     var newJoke1 = document.getElementById("newJoke1").value;
+    var img = "https://thumbs.dreamstime.com/b/vector-illustration-bird-bird-sitting-bird-vector-bird-icon-logo-115133018.jpg";
+      // String [] arr = {"https://thumbs.dreamstime.com/b/vector-illustration-bird-bird-sitting-bird-vector-bird-icon-logo-115133018.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQc-7ApYAARXV-Bs_TE1gdZ2RiRdkj0xCdXQ&usqp=CAU", "https://png.pngtree.com/png-vector/20191206/ourmid/pngtree-a-red-little-bird-vector-or-color-illustration-png-image_2030892.jpg"};
+      // Random random = new Random();
 
-      String [] arr = {"https://thumbs.dreamstime.com/b/vector-illustration-bird-bird-sitting-bird-vector-bird-icon-logo-115133018.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQc-7ApYAARXV-Bs_TE1gdZ2RiRdkj0xCdXQ&usqp=CAU", "https://png.pngtree.com/png-vector/20191206/ourmid/pngtree-a-red-little-bird-vector-or-color-illustration-png-image_2030892.jpg"};
-      Random random = new Random();
-
-        // randomly selects an index from the arr
-      int select = random.nextInt(arr.length); 
-      alert(select);
+      //   // randomly selects an index from the arr
+      // int select = random.nextInt(arr.length); 
+      // alert(select);
 
       reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1+"/"img, 0);
       location.reload();
