@@ -73,7 +73,7 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <!-- HTML table fragment for page -->
-<!-- <table>
+<table>
   <thead>
   <tr>
     <th>Username</th>
@@ -81,14 +81,12 @@ window.onload = wrap_img;
   </thead>
   <tbody id="result">
     <!-- javascript generated data -->
-<p><!-- </tbody>
-</table> --> –&gt;</p>
+  </tbody>
+</table>
 
-<p><input type="text" id="newJoke" placeholder="Username" />
-<input type="text" id="newJoke1" placeholder="Password" />
+<p><input type="text" id="newJoke" placeholder="Enter New Joke" />
+<input type="text" id="newJoke1" placeholder="Enter sec Joke" />
 <button id="btn" onclick="AddNewEntryReaction()">Save</button></p>
-
-<div id="result" class="row"></div>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -135,27 +133,8 @@ window.onload = wrap_img;
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
-          for (const row of data) {
-          // make "card element" for each "row of data"
-          const card = document.createElement("div");
-          card.className = "card";
-          card.style = "width: 18rem; margin: 3rem; border-radius: 1rem; background-color: #FFFFFF"
           
-          // td for song cell
-          const cardbody = document.createElement("div");
-            cardbody.className = "card-body";
-            cardbody.innerHTML = "<iframe style='border-radius:12px' src='" + row.song + "' width='100%' height='352' frameBorder='0' allowfullscreen='0' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>";  // add fetched data to innerHTML
 
-          // td for haha cell with onclick actions
-          const joke_but = document.createElement("a");
-            joke_but.id = NEWENTRY+row.id;
-            joke_but.className = "btn btn-success mx-1";   // establishes a HAHA JS id for cell
-            joke_but.innerHTML = "Like - [" + row.joke + "]";;  // add fetched "haha count" to innerHTML
-
-          card.appendChild(cardbody);
-          cardbody.appendChild(joke_but);
-
-          resultContainer.appendChild(card);
       })
   })
   // catch fetch errors (ie Nginx ACCESS to server blocked)
@@ -168,6 +147,7 @@ window.onload = wrap_img;
   function AddNewEntryReaction() {
       var newJoke = document.getElementById("newJoke").value;
       var newJoke1 = document.getElementById("newJoke1").value;
+    
      
       reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1, 0);
   }
