@@ -7,17 +7,6 @@ image: images/logo.png
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script>
-  if (localStorage.getItem("loggedIn") == "true") {
-    document.getElementById("welcome").innerHTML = "Welcome to Flockhub, " + localStorage.getItem("ghUsername");
-    document.getElementById("login").style.display = none;
-  } 
-  else {
-    document.getElementById("welcome").innerHTML = "Welcome to Flockhub";
-    document.getElementById("login").style.display = '';
-  }
-</script>
-
 <style>
 body{
   background-color:#85d6a7;
@@ -52,7 +41,7 @@ body{
 }
 </style>
 </head>
-<body>
+<body onload="checkLogin()">
 <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px" id="welcome">Welcome to Flockhub</h1>
@@ -65,3 +54,16 @@ body{
 </body>
 </html>
 
+<script>
+  function checkLogin() {
+    if (localStorage.getItem("loggedIn") == "true") {
+      document.getElementById("welcome").innerHTML = "Welcome to Flockhub, " + localStorage.getItem("ghUsername");
+      document.getElementById("login").style.display = "none";
+    } 
+    else {
+      document.getElementById("welcome").innerHTML = "Welcome to Flockhub";
+      document.getElementById("login").style.display = 'inline-block';
+    }
+  }
+ 
+</script>
