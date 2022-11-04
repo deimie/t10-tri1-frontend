@@ -148,6 +148,9 @@ window.onload = wrap_img;
             // td for joke cell
             const joke = document.createElement("td");
               joke.innerHTML = row.joke;  // add fetched data to innerHTML
+            const img = document.createElement("td");
+              var imgElement = "<img src=""" + row.img + """ alt='test' width='200px' height='275px'/>";
+              img.innerHTML = imgElement;  
 
             // td for haha cell with onclick actions
             const haha = document.createElement("td");
@@ -173,6 +176,7 @@ window.onload = wrap_img;
              
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(joke);
+            tr.appendChild(img);
 
 
             // this adds all the tr (row) work above to the HTML "result" container
