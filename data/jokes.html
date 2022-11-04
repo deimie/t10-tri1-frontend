@@ -98,7 +98,7 @@ window.onload = wrap_img;
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
-
+  import java.util.Random
   // prepare HTML defined "result" container for new output
   const resultContainer = document.getElementById("result");
 
@@ -191,9 +191,14 @@ window.onload = wrap_img;
   function AddNewEntryReaction() {
       var newJoke = document.getElementById("newJoke").value;
       var newJoke1 = document.getElementById("newJoke1").value;
-    
+      
+      String [] arr = {"https://png.pngtree.com/png-vector/20191206/ourmid/pngtree-a-red-little-bird-vector-or-color-illustration-png-image_2030892.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQc-7ApYAARXV-Bs_TE1gdZ2RiRdkj0xCdXQ&usqp=CAU", "https://thumbs.dreamstime.com/b/vector-illustration-bird-bird-sitting-bird-vector-bird-icon-logo-115133018.jpg"};
+         Random random = new Random();
+
+         // randomly selects an index from the arr
+         int select = random.nextInt(arr.length);
      
-      reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1, 0);
+      reaction(NEWENTRY, new_joke_url+newJoke+"/"+newJoke1+"/"+select, 0);
       location.reload();
   }
 
